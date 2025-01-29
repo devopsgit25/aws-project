@@ -7,8 +7,8 @@ phases:
     commands:
       # Get the login command from AWS CLI and execute it to log into ECR
       - echo Logging in to Amazon ECR...
-      # - aws ecr get-login-password --region $AWS_REGION | docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com
-      - aws ecr get-login-password --region us-east-1 --access-key-id AKIA6D6JBUCV6FYBVOOV --secret-access-key 7TEgspDGCc045MG4CS7074g1gAmPjlNegn5QeZ1d | docker login --username AWS --password-stdin $9705-4737-2203.dkr.ecr.your-region.amazonaws.com
+      - aws ecr get-login-password --region $AWS_REGION | docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com
+      
 
 
   pre_build:
